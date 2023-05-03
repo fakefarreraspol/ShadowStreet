@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WheelRotator : MonoBehaviour
+public class CarSpawner : MonoBehaviour
 {
     // Start is called before the first frame update
-    private float rotateSpeed = 10;
     void Start()
     {
         
@@ -15,7 +14,5 @@ public class WheelRotator : MonoBehaviour
     void Update()
     {
         
-        //transform.Translate(-Vector3.forward * speed * Time.deltaTime);
-        transform.RotateAroundLocal(new Vector3(1,0,0), rotateSpeed * Time.deltaTime);
     }
 }
