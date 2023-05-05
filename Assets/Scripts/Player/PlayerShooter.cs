@@ -29,6 +29,8 @@ public class PlayerShooter : MonoBehaviour
     public TextMeshProUGUI ammunitionDisplay;
 
 
+    private AudioSource mAudioSource;
+
     int bulletsLeft, bulletsShot;
 
     //bools
@@ -44,6 +46,8 @@ public class PlayerShooter : MonoBehaviour
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
+
+        mAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -100,6 +104,7 @@ public class PlayerShooter : MonoBehaviour
 
         //Instantiate bullet
         GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity);
+
         //Rotate bullet to shoot direction
         currentBullet.transform.forward = directionWithSpread.normalized;
 
@@ -119,6 +124,10 @@ public class PlayerShooter : MonoBehaviour
             Invoke("ResetShot", timeBetweenShooting);
             allowInvoke = false;
         }
+
+
+        //Sound Effect
+        mAudioSource.Play();
     }
 
     private void ResetShot()

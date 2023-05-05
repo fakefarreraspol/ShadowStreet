@@ -41,8 +41,8 @@ public class CarMovement : MonoBehaviour
     {
         for (int i=0; i < wheels.Length; i++)
         {
-            //wheels[i].transform.Rotate(new Vector3(1,0,0) * rotateSpeed * Time.deltaTime);
-            wheels[i].transform.Rotate(new Vector3(10,0,0) * Time.deltaTime);
+            wheels[i].transform.Rotate(new Vector3(1,0,0) * rotateSpeed * Time.deltaTime);
+            //wheels[i].transform.Rotate(new Vector3(10,0,0) * Time.deltaTime);
         }
     }
 }
