@@ -2074,16 +2074,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 10822194, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
+      propertyPath: m_Range
+      value: 39.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 10822194, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 10822194, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
       propertyPath: m_Intensity
-      value: 1.81
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 10822194, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 10822194, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 10822194, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
       propertyPath: m_BounceIntensity
-      value: 0
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 10827578, guid: b2a936b57ff26be4491d67b1f6e532f3, type: 3}
       propertyPath: m_Enabled

@@ -125,7 +125,7 @@ public class PlayerShooter : MonoBehaviour
             allowInvoke = false;
         }
 
-
+        Destroy(currentBullet, 2);
         //Sound Effect
         mAudioSource.Play();
     }
