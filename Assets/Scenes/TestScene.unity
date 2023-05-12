@@ -15968,18 +15968,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkSounds:
-  - {fileID: 8300000, guid: d987893b269170647bfbcba18b02b979, type: 3}
-  - {fileID: 8300000, guid: 3d52b8ae166a50e4b9c9b80d4ebed46f, type: 3}
-  - {fileID: 8300000, guid: 3baadd42b990c434ea69a0c69d3f634b, type: 3}
-  - {fileID: 8300000, guid: d32b2422b5cf61c46b8fdeab8aa80fff, type: 3}
-  - {fileID: 8300000, guid: 938675e5daddca64786f9b59fb4b739b, type: 3}
-  - {fileID: 8300000, guid: 1ad4fbda2fdeee84ebb72ad7b2094292, type: 3}
-  - {fileID: 8300000, guid: 7498365dab580f84881e4f7d3213d65e, type: 3}
-  - {fileID: 8300000, guid: 5c9b90cd2ad1e2a40a12d82aaaf8482a, type: 3}
-  - {fileID: 8300000, guid: a4bc83ec08d5bc54ea14faabb7160328, type: 3}
-  - {fileID: 8300000, guid: e342b38ff78114847b6b15aeaccd5dcb, type: 3}
   - {fileID: 8300000, guid: ae6f54c54fa00234aacedf660ce95315, type: 3}
   - {fileID: 8300000, guid: d0e544713dd1b7b4a9b33043e88987af, type: 3}
+  - {fileID: 8300000, guid: 7498365dab580f84881e4f7d3213d65e, type: 3}
+  - {fileID: 8300000, guid: 5c9b90cd2ad1e2a40a12d82aaaf8482a, type: 3}
+  - {fileID: 8300000, guid: d32b2422b5cf61c46b8fdeab8aa80fff, type: 3}
+  - {fileID: 8300000, guid: 938675e5daddca64786f9b59fb4b739b, type: 3}
   audioSource: {fileID: 1454877573}
   pos: 0
 --- !u!82 &1454877573
@@ -16078,6 +16072,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1454877575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454877569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37bf710ff2109af47bb58ce219e17ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeed: -8
+  maxSpeed: 0
+  wheels: []
+  rotateSpeed: 0
 --- !u!1001 &1460601086
 PrefabInstance:
   m_ObjectHideFlags: 0
