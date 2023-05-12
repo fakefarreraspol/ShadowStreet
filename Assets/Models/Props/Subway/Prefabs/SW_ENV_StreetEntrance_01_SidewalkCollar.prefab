@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3467171272432498794}
   - component: {fileID: 103453183307378281}
   m_Layer: 0
-  m_Name: FREE_SW_ENV_StreetEntrance_01_SidewalkCollar
+  m_Name: SW_ENV_StreetEntrance_01_SidewalkCollar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

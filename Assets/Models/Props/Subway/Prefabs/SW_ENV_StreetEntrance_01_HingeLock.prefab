@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5613582275903884826}
   - component: {fileID: 5613582275905015002}
   m_Layer: 0
-  m_Name: FREE_SW_ENV_StreetEntrance_01_HingeLock
+  m_Name: SW_ENV_StreetEntrance_01_HingeLock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

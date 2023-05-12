@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8529775035622124001}
   - component: {fileID: 1272571909}
   m_Layer: 0
-  m_Name: FREE_SW_ENV_StreetEntrance_01
+  m_Name: SW_ENV_StreetEntrance_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
