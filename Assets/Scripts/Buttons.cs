@@ -8,8 +8,7 @@ public class Buttons : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Button button = gameObject.GetComponent<Button>();
-        button.onClick.AddListener(ToGameScene01);
+        
     }
 
     // Update is called once per frame
@@ -21,4 +20,5 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("TestScene");
     }
+    
 }
