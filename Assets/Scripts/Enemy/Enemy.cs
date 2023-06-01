@@ -26,5 +26,10 @@ public class Enemy : MonoBehaviour
         {
             health -= 20; 
         }
+        if(collision.gameObject.tag == "interactable")
+        {
+            Destroy(collision.gameObject);
+            health -= 300;
+        }
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - House
   - Tension
   - Bullet
+  - interactable
   layers:
   - Default
   - TransparentFX
