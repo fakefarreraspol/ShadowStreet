@@ -800,7 +800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 313967243}
-  player: {fileID: 346315413}
+  player: {fileID: 1452681749}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 2147483647
@@ -816,11 +816,6 @@ MonoBehaviour:
   attackRange: 12
   playerInSightRange: 0
   playerInAttackRange: 0
---- !u!4 &346315413 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7762291869630398883, guid: 05b0e9afc1dfa774c9dbd125af91c92f, type: 3}
-  m_PrefabInstance: {fileID: 436829439}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &348166667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,6 +3010,11 @@ Transform:
   m_Father: {fileID: 1148965800}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
+--- !u!4 &1452681749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1247146560731109861, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
+  m_PrefabInstance: {fileID: 1435437137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1469545139
 GameObject:
   m_ObjectHideFlags: 0
