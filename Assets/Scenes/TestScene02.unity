@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pinchAnimationAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Pinch Animation
       m_Type: 0
@@ -301,9 +301,10 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   bulletStartPos: {fileID: 1348039839}
-  bullet: {fileID: 1587509183}
+  bullet: {fileID: 7094768750708626499, guid: add864796d774ef47934071187def73c, type: 3}
+  shootForce: 100
 --- !u!1 &205421760
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +711,7 @@ GameObject:
   - component: {fileID: 313967244}
   - component: {fileID: 313967243}
   - component: {fileID: 313967248}
+  - component: {fileID: 313967249}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -847,6 +849,19 @@ MonoBehaviour:
   attackRange: 12
   playerInSightRange: 0
   playerInAttackRange: 0
+--- !u!114 &313967249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313967242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0320533aab60004ea4547528730e865, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 40
 --- !u!1 &348166667
 GameObject:
   m_ObjectHideFlags: 0
