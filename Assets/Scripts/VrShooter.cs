@@ -9,13 +9,13 @@ public class VrShooter : MonoBehaviour
     public InputActionProperty pinchAnimationAction;
     public Transform bulletStartPos;
     public GameObject bullet;
-    
+
     private bool canShoot = false;
     public float shootForce;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,10 +25,16 @@ public class VrShooter : MonoBehaviour
 
         if (triggerValue > 0.90 && canShoot)
         {
-            GameObject newBullet = Instantiate(bullet, bulletStartPos.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody>().AddForce(Vector3.forward * shootForce, ForceMode.Impulse);
-            canShoot = false;
+            Shoot();
         }
-        if(triggerValue < 0.10) canShoot = true;
+        if (triggerValue < 0.10) canShoot = true;
+    }
+
+
+    private void Shoot()
+    {
+        GameObject newBullet = Instantiate(bullet, bulletStartPos.position, Quaternion.identity);
+        newBullet.GetComponent<Rigidbody>().AddForce(bulletStartPos.forward * shootForce, ForceMode.Impulse);
+        canShoot = false;
     }
 }
