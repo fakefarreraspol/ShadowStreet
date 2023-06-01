@@ -16,6 +16,7 @@ TagManager:
   - Tension
   - Bullet
   - interactable
+  - enemyBullet
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - Car
   - Enemy
   - Bullet
-  - 
-  - 
+  - Ground
+  - enemyBullet
   - 
   - 
   - 
