@@ -273,6 +273,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.054754574, y: 0.14169732, z: 0.056162696}
   m_Center: {x: 0.0000012824311, y: 0.07084866, z: 0.0000015106051}
+--- !u!1 &191558026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8650498953044810725, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
+  m_PrefabInstance: {fileID: 1435437137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &191558030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191558026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c1aa8f66c8afd4e819edd6558a22c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinchAnimationAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Pinch Animation
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8447d011-ddef-4443-9a23-35ea0c54d81d
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  bulletStartPos: {fileID: 1348039839}
+  bullet: {fileID: 1587509183}
 --- !u!1 &205421760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +2785,11 @@ Transform:
   m_Father: {fileID: 1148965800}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 450}
+--- !u!4 &1348039839 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1301908001485379963, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
+  m_PrefabInstance: {fileID: 1435437137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1435437137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2808,6 +2844,10 @@ PrefabInstance:
     - target: {fileID: 3931724802022960242, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
       propertyPath: m_Name
       value: XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931724802022960242, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6362015339429459566, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
