@@ -128,4 +128,16 @@ public class EnemyBehaviour : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            TakeDamage(30); 
+        }
+        if(collision.gameObject.tag == "interactable")
+        {
+            TakeDamage(300);
+        }
+    }
 }
