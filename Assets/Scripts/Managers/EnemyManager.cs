@@ -5,14 +5,17 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Transform[] spawnpoint;
+    public GameObject[] enemy;
     void Start()
     {
-        
+        InvokeRepeating("SpawnEnemy", 5, 1);
     }
 
     // Update is called once per frame
-    void Update()
+    void SpawnEnemy()
     {
-        
+        int number = Random.Range(0, spawnpoint.Length);
+        Instantiate(enemy[0], spawnpoint[number].position, Quaternion.identity);
     }
 }
