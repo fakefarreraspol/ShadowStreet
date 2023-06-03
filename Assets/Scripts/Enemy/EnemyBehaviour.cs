@@ -35,6 +35,11 @@ public class EnemyBehaviour : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
+    private void Start()
+    {
+        attackRange = Random.Range(3,10);
+        health = Random.Range(20, 60);
+    }
     private void Update()
     {
         //Check for sight and attack range

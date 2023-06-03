@@ -9,7 +9,7 @@ public class EnemyManager : MonoBehaviour
     public GameObject[] enemy;
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 5, 1);
+        InvokeRepeating("SpawnEnemy", 1, 5);
     }
 
     // Update is called once per frame
