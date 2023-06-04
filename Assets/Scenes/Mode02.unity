@@ -5833,6 +5833,7 @@ MonoBehaviour:
   - {fileID: 426872900}
   enemy:
   - {fileID: 7434574957480466473, guid: 24f9eb5cf133ab548aeec52157faba22, type: 3}
+  mode02: 1
 --- !u!1 &1636551582
 GameObject:
   m_ObjectHideFlags: 0
