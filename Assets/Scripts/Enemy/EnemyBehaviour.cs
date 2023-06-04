@@ -31,6 +31,9 @@ public class EnemyBehaviour : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
     public bool room02;
+
+
+    Animator animator;
     private void Awake()
     {
         player = GameObject.Find("XR Origin").transform;
@@ -41,12 +44,15 @@ public class EnemyBehaviour : MonoBehaviour
     {
         attackRange = Random.Range(3, 10);
         health = Random.Range(20, 60);
-
+        
         if (room02)
         {
 
             scoreSC = FindObjectOfType<ScoreScript>();
         }
+
+
+        animator = GetComponent<Animator>();
 
     }
     private void Update()
@@ -80,6 +86,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
+        animator.SetFloat("Speed", 1);
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
@@ -121,6 +128,10 @@ public class EnemyBehaviour : MonoBehaviour
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
+
+        animator.SetFloat("Speed", 0.1f );
+        animator.SetBool("Aiming", true);
+        animator.SetBool("Squat", false);
     }
     private void ResetAttack()
     {
