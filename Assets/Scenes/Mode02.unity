@@ -1244,6 +1244,53 @@ MonoBehaviour:
   bulletStartPos: {fileID: 1348039839}
   bullet: {fileID: 7094768750708626499, guid: add864796d774ef47934071187def73c, type: 3}
   shootForce: 100
+--- !u!1 &197371612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197371613}
+  - component: {fileID: 197371614}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: scoremanager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197371613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197371612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 500303861}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197371614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197371612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815f518a5db69ac49b7cf13d59f090af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mod2: 1
+  enemyCount: 0
+  score: 0
 --- !u!1 &205119670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2591,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1586672691}
+  - {fileID: 197371613}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5540,6 +5588,10 @@ PrefabInstance:
       propertyPath: m_System
       value: 
       objectReference: {fileID: 1978196167}
+    - target: {fileID: 7789470715694018964, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6362015339429459566, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
     - {fileID: 1889950337842394467, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
@@ -7817,5 +7869,9 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1452681749}
+    - target: {fileID: 7434574957480466483, guid: 24f9eb5cf133ab548aeec52157faba22, type: 3}
+      propertyPath: scoreSC
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24f9eb5cf133ab548aeec52157faba22, type: 3}

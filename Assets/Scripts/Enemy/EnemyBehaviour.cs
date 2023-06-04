@@ -25,6 +25,8 @@ public class EnemyBehaviour : MonoBehaviour
     bool alreadyAttacked;
     public GameObject projectile;
 
+    public ScoreScript scoreSC;
+
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
@@ -37,8 +39,15 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Start()
     {
-        attackRange = Random.Range(3,10);
+        attackRange = Random.Range(3, 10);
         health = Random.Range(20, 60);
+
+        if (room02)
+        {
+
+            scoreSC = FindObjectOfType<ScoreScript>();
+        }
+
     }
     private void Update()
     {
@@ -57,6 +66,7 @@ public class EnemyBehaviour : MonoBehaviour
             if (!playerInSightRange && !playerInAttackRange) ChasePlayer();
             if (playerInSightRange && !playerInAttackRange) ChasePlayer();
             if (playerInAttackRange && playerInSightRange) AttackPlayer();
+
         }
 
     }
@@ -123,6 +133,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     private void DestroyEnemy()
     {
+        if (room02) scoreSC.AddPoints(100);
         Destroy(gameObject);
     }
 
@@ -136,11 +147,11 @@ public class EnemyBehaviour : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet")
         {
-            TakeDamage(30); 
+            TakeDamage(30);
         }
-        if(collision.gameObject.tag == "interactable")
+        if (collision.gameObject.tag == "interactable")
         {
             TakeDamage(300);
         }

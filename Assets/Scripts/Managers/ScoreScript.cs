@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class ScoreScript : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    
     public bool mod2;
     public int enemyCount;
+
+    public int score;
 
     void Start()
     {
@@ -19,9 +21,10 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemyCount = GameObject.FindGameObjectsWithTag("enemy").Length;
         if (!mod2)
         {
-            enemyCount = GameObject.FindGameObjectsWithTag("enemy").Length;
+            
             if (enemyCount <= 0)
             {
                 SceneManager.LoadScene("WinScene");
@@ -29,5 +32,14 @@ public class ScoreScript : MonoBehaviour
 
         }
 
+    }
+
+    public void AddPoints(int points)
+    {
+        score += points;
+    }
+    public int GetPoints()
+    {
+        return score;
     }
 }

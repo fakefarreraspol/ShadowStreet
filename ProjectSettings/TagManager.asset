@@ -18,6 +18,7 @@ TagManager:
   - interactable
   - enemyBullet
   - enemy
+  - scoremanager
   layers:
   - Default
   - TransparentFX
