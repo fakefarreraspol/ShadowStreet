@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float health = 100;
+    public int health = 100;
+    public int maxHealth;
     void Start()
     {
-
+        maxHealth = health;
     }
 
     // Update is called once per frame
