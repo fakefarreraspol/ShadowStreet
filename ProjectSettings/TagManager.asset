@@ -17,6 +17,7 @@ TagManager:
   - Bullet
   - interactable
   - enemyBullet
+  - enemy
   layers:
   - Default
   - TransparentFX
