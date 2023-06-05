@@ -9,12 +9,13 @@ public class VrShooter : MonoBehaviour
     public InputActionProperty pinchAnimationAction;
     public Transform bulletStartPos;
     public GameObject bullet;
-
+    AudioSource audioSourceee;
     private bool canShoot = false;
     public float shootForce;
     // Start is called before the first frame update
     void Start()
     {
+        audioSourceee = GetComponent<AudioSource>();
 
     }
 
@@ -36,5 +37,6 @@ public class VrShooter : MonoBehaviour
         GameObject newBullet = Instantiate(bullet, bulletStartPos.position, Quaternion.identity);
         newBullet.GetComponent<Rigidbody>().AddForce(bulletStartPos.forward * shootForce, ForceMode.Impulse);
         canShoot = false;
+        audioSourceee.Play();
     }
 }

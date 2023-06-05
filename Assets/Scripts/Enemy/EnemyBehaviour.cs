@@ -53,9 +53,16 @@ public class EnemyBehaviour : MonoBehaviour
         attackRange = Random.Range(3, 10);
         health = Random.Range(20, 60);
 
+
+
         if (room02)
         {
             scoreSC = FindObjectOfType<ScoreScript>();
+            
+            audioSource.clip = stepClip;
+            audioSource.volume = 1.0f;
+            audioSource.Play();
+            
         }
 
 
@@ -138,6 +145,7 @@ public class EnemyBehaviour : MonoBehaviour
             //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
             audioSource.clip = shootClip;
+            audioSource.volume = 0.4f;
             audioSource.Play();
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);

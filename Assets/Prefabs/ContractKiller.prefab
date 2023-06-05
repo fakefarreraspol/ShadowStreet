@@ -150,7 +150,7 @@ MonoBehaviour:
   room02: 0
   audioSource: {fileID: 0}
   shootClip: {fileID: 8300000, guid: cb498d91a54de9a4eb1e0386be1dd729, type: 3}
-  stepClip: {fileID: 0}
+  stepClip: {fileID: 8300000, guid: 0f821c770f55af64381efb49fa1dd34e, type: 3}
 --- !u!195 &6641338299328986443
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -194,7 +194,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 130.85
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
