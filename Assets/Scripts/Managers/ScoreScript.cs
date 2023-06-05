@@ -10,8 +10,12 @@ public class ScoreScript : MonoBehaviour
     public bool mod2;
     public int enemyCount;
 
-    public int score;
+    public static int score;
 
+    // void Awake()
+    // {
+    //     DontDestroyOnLoad(score);
+    // }
     void Start()
     {
         enemyCount = 0;
@@ -41,5 +45,9 @@ public class ScoreScript : MonoBehaviour
     public int GetPoints()
     {
         return score;
+    }
+    public void ResetPoints()
+    {
+        score = 0;
     }
 }
