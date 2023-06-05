@@ -18,10 +18,15 @@ public class Buttons : MonoBehaviour
     {
 
     }
-    public void ToGameScene01()
+    public async void ToGameScene01()
     {
         scrs.ResetPoints();
-        SceneManager.LoadScene("TestScene");
+        var scene = SceneManager.LoadSceneAsync("TestScene");
+        do
+        {
+            await Task.Delay(200);
+        } while (scene.progress < 0.9f);
+        scene.allowSceneActivation = true;
     }
     public async void ToGameScene02()
     {
@@ -29,16 +34,22 @@ public class Buttons : MonoBehaviour
         scrs.ResetPoints();
         var scene = SceneManager.LoadSceneAsync("TestScene02");
         scene.allowSceneActivation = false;
-        
-        do{
+
+        do
+        {
             await Task.Delay(200);
-        }while (scene.progress < 0.9f);
+        } while (scene.progress < 0.9f);
         scene.allowSceneActivation = true;
     }
-    public void ToGameMode02()
+    public async void ToGameMode02()
     {
         scrs.ResetPoints();
-        SceneManager.LoadScene("Mode02");
+        var scene = SceneManager.LoadSceneAsync("Mode02");
+        do
+        {
+            await Task.Delay(200);
+        } while (scene.progress < 0.9f);
+        scene.allowSceneActivation = true;
     }
 
 }
