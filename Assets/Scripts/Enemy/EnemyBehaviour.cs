@@ -34,6 +34,8 @@ public class EnemyBehaviour : MonoBehaviour
 
 
     Animator animator;
+
+    PlayerController controller;
     private void Awake()
     {
         player = GameObject.Find("XR Origin").transform;
@@ -47,12 +49,13 @@ public class EnemyBehaviour : MonoBehaviour
         
         if (room02)
         {
-
             scoreSC = FindObjectOfType<ScoreScript>();
         }
 
 
         animator = GetComponent<Animator>();
+        controller = GetComponent<PlayerController>();
+        controller.SetArsenal("One Pistol");
 
     }
     private void Update()
