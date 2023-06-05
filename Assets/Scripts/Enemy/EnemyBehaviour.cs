@@ -36,17 +36,23 @@ public class EnemyBehaviour : MonoBehaviour
     Animator animator;
 
     PlayerController controller;
+
+    //audio
+    public AudioSource audioSource;
+    public AudioClip shootClip;
+    public AudioClip stepClip;
     private void Awake()
     {
         player = GameObject.Find("XR Origin").transform;
         agent = GetComponent<NavMeshAgent>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
     {
         attackRange = Random.Range(3, 10);
         health = Random.Range(20, 60);
-        
+
         if (room02)
         {
             scoreSC = FindObjectOfType<ScoreScript>();
@@ -90,6 +96,7 @@ public class EnemyBehaviour : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         animator.SetFloat("Speed", 1);
+        animator.SetBool("Aiming", false);
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
@@ -108,11 +115,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void ChasePlayer()
     {
+        animator.SetFloat("Speed", 1);
         agent.SetDestination(player.position);
+        animator.SetBool("Aiming", false);
     }
 
     private void AttackPlayer()
     {
+
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
@@ -127,12 +137,14 @@ public class EnemyBehaviour : MonoBehaviour
             rb.AddForce(transform.forward * 50f, ForceMode.Impulse);
             //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
-
+            audioSource.clip = shootClip;
+            audioSource.Play();
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
+
         }
 
-        animator.SetFloat("Speed", 0.1f );
+        animator.SetFloat("Speed", 0.1f);
         animator.SetBool("Aiming", true);
         animator.SetBool("Squat", false);
     }
