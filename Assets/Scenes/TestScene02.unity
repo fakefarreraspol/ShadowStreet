@@ -4057,7 +4057,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mod2: 0
   enemyCount: 0
-  score: 0
 --- !u!4 &1080583980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6835159927189020221, guid: 4da9f6017c5c2954282fe23c8f297ec2, type: 3}
@@ -5017,7 +5016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7789470715694018964, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6362015339429459566, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}

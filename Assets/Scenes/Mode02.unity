@@ -1258,7 +1258,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mod2: 1
   enemyCount: 0
-  score: 0
 --- !u!1 &205119670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,7 +2419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7762291869630398887, guid: 05b0e9afc1dfa774c9dbd125af91c92f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7762291869630398887, guid: 05b0e9afc1dfa774c9dbd125af91c92f, type: 3}
       propertyPath: m_TagString
@@ -6627,7 +6626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4932831702445121146, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5376330263010559999, guid: 8f4fdec37ebac4741b79cd764a680c64, type: 3}
       propertyPath: m_System
